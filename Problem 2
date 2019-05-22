@@ -1,1 +1,40 @@
+// Tadle, Joie Louise
+// 1-16
+// Experiment 3: Arrays & Strings
+// Problem 2
 
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	char province[3] = {'A','B','C'};
+	int temperature[3][7];
+	
+	cout << "Enter the Temperature per Day & per Province\n";
+	for (int x = 0; x < 3; x++)
+	{
+		for(int y = 1; y <= 7; y++)
+		{
+			cout << "Province " << province[x] << ", Day " << y << " : ";
+			cin >> temperature[x][y];
+		}
+	}
+	
+	cout << "\n";
+	
+	cout << "Displaying the Data\n"; 
+	for (int x = 0; x < 3; x++)
+	{
+		for(int y = 1; y <= 7; y++)
+		{
+			cout << "Province " << province[x] << ", Day " << y << " : ";
+			cout << temperature[x][y] << "\n";
+		}
+	}
+	
+_getch();	
+return 0;
+}
